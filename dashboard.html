@@ -4,11 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <!-- <title>Dashboard</title> -->
+    <title> NexInnovation</title>
+    <link href="img/favicon.png" rel="icon">
+
 </head>
 
 <body>
+    <div class="dashboard-container">
+        <h1>Welcome to NexInnovation Dashboard</h1>
+        <p id="user-email">Loading user...</p>
+        <button onclick="logoutUser()" class="logout-btn">Logout</button>
+    </div>
 
+    <!-- Firebase protection & logout script -->
+    <script type="module" src="js/dashboard-auth.js"></script>
 </body>
 
 </html>
