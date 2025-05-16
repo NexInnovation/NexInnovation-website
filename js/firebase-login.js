@@ -27,7 +27,7 @@ document.querySelector('.login100-form').addEventListener('submit', async functi
 
     try {
         await signInWithEmailAndPassword(auth, email, password);
-        alert("Login successful!");
+        // alert("Login successful!");
         window.location.href = "dashboard.html";
     } catch (error) {
         alert("Login failed: " + error.message);
