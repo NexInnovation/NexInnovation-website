@@ -1,0 +1,15 @@
+#navLogo {
+    width: 40px;
+    transition: all 0.6s ease-in-out;
+    opacity: 0;
+    transform: scale(4) translate(50vw, 50vh);
+    /* Start from center */
+    position: absolute;
+}
+
+body.loaded #navLogo {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+    /* Animate to navbar */
+    position: static;
+}
